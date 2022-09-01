@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>ScoreKeeper</title>
+</head>
+
+<body>
+
+    <div class="card container d-flex justify-content-center p-0" style="width: 18rem;">
+        <img src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1375&q=80"
+            alt="pingPong" id="headerImg" class="img-fluid p-0">
+        <div class="card-header">
+            <h5 class="card-title fs-6">Ping Pong Score Keeper</h5>
+        </div>
+        <div class="card-body">
+            <h1><span id="pOne">0</span> to <span id="pTwo">0</span></h1>
+            <p>Use the buttons below to keep score</p>
+            <div>
+                <label for="scoreLimit">Playing To</label>
+                <select class="form-select-xs " name="" id="scoreLimit">
+                    <option value="5">5</option>
+                    <option value="7">7</option>
+                    <option value="9">9</option>
+                    <option value="11">11</option>
+                </select>
+            </div>
+        </div>
+        <div class="btn-group p-0 card-footer ">
+            <button id="pOneBtn" class="btn btn-success">+1 Player One</button>
+            <button id="pTwoBtn" class="btn btn-primary">+1 Player Two</button>
+            <button id="resetBtn" class="btn btn-danger">Reset</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
